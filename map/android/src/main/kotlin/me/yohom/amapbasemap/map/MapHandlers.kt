@@ -33,8 +33,10 @@ object AddMarker : MapMethodHandler {
         return this
     }
 
+
+
     override fun onMethodCall(call: MethodCall, result: MethodChannel.Result) {
-        val optionsJson = call.argument<String>("markerOptions") ?: "{}"
+/*        val optionsJson = call.argument<String>("markerOptions") ?: "{}"
 
         log("方法marker#addMarker android端参数: optionsJson -> $optionsJson")
 
@@ -43,7 +45,7 @@ object AddMarker : MapMethodHandler {
         val marker = map.addMarker(markerOptions.toMarkerOption())
         marker.`object` = markerOptions.`object`
 
-        result.success(marker.id)
+        result.success(marker.id)*/
     }
 }
 
